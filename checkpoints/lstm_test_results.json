@@ -1,0 +1,78 @@
+{
+  "test": {
+    "auroc": 1.0,
+    "auprc": 1.0,
+    "brier": 6.765940696595862e-08,
+    "loss": 0.0002629853039979935,
+    "threshold": 0.1,
+    "classification_report": {
+      "survived": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 392.0
+      },
+      "died": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 58.0
+      },
+      "accuracy": 1.0,
+      "macro avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 450.0
+      },
+      "weighted avg": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1-score": 1.0,
+        "support": 450.0
+      }
+    },
+    "n_positive": 58,
+    "n_total": 450
+  },
+  "history": [
+    {
+      "epoch": 1,
+      "train_loss": 0.5385597795425233,
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "brier": 6.793602125299003e-08,
+      "loss": 0.00026349216996962636
+    },
+    {
+      "epoch": 2,
+      "train_loss": 0.00023236463062479388,
+      "auroc": 1.0,
+      "auprc": 1.0,
+      "brier": 2.371457197281046e-10,
+      "loss": 2.0559167303654733e-05
+    },
+    {
+      "epoch": 3,
+      "train_loss": 0.0001426537474366395,
+      "auroc": 1.0,
+      "auprc": 0.9999999999999999,
+      "brier": 4.728502034367921e-10,
+      "loss": 2.573409758945989e-05
+    }
+  ],
+  "args": {
+    "model": "lstm",
+    "data": "synthetic",
+    "mimic_path": "",
+    "epochs": 3,
+    "batch_size": 64,
+    "lr": 0.001,
+    "d_model": 64,
+    "hidden_dim": 128,
+    "dropout": 0.3,
+    "pos_weight": null,
+    "seed": 42,
+    "save_dir": "checkpoints"
+  }
+}
